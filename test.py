@@ -30,7 +30,22 @@ print(exp1.equals(exp2))
 exp1 = parse_latex("\\frac{-b}{2a}")
 exp2 = parse_latex("\\frac{-b}{a2}")
 print(exp1.equals(exp2))
- 
+
+# Test: Infinity
+
+
+# Sqrt
+# sqrt(x+y) = (x+y)^(1/2)
+print("Sqrt Test:", end=" ")
+exp1 = parse_latex("\\sqrt{x+y}")
+exp2 = parse_latex("\\left(x+y\\right)^{\\frac12}")
+print(exp1.equals(exp2))
+
+# Sqrt 2
+print("Sqrt Test 2:", end=" ")
+exp1 = parse_latex("\\sqrt{x^2+y^2}")
+exp2 = parse_latex("\\left(x^2+y^2\\right)^{\\frac12}")
+print(exp1.equals(exp2))
 
 
 
