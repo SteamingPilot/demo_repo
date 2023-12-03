@@ -1,0 +1,4 @@
+Django==4.2.7
+antlr4-python3-runtime==4.11.0
+sympy==1.12
+
